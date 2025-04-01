@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Pagina de Inicio-->
+   <div class="container" id="inicio">
+        <div class="welcome">
+           <img src="./Imagenes/Screen=Login.png" alt="welcome" class="welcome1">
+          <h1>Bienvenido a Cultura Play</h1>
+          <p>¿Estás listo para demostrar tus conocimientos?</p>
+        </div>
+        <div class="Login">
+            <img src="./Imagenes/Logo.png" alt="logo">
+            <form onsubmit="return jugar();">
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" class="nombre">
+                <input type="submit" value="Jugar" class="btn-jugar">
+            </form>
+        
+        </div>
+    </div>
+
+ <!--Pagina de Instrucciones-->    
+ <div class="container2" id="instrucciones">
+        <div class="info-titulo"><span>Algunas reglas de este Juego</span> </div>
+        <div class="infolista">
+            <div class="info">1. Tendrás solo <span>15 segundos</span> por cada pregunta.</div>
+            <div class="info">2. Una vez que selecciones una respuesta, no se podrá cambiar.</div>
+            <div class="info">3. No podrás seleccionar ninguna opción una vez el tiempo se haya terminado.</div>
+            <div class="info">4. No te podrás salir del juego una vez que estés jugando.</div>
+            <div class="info">5. Obtendrás puntos cada vez que tengas una respuesta correcta.</div>
+        </div>
+        <div class="botones">
+        <button class="continue">Continuar</button>
+        </div>
+ </div>   
+                
+ <!--Pagina de Preguntas-->
+ <div class="quiz_box">
+    <div class="conteinerimg">
+        <img src="Imagenes/timeimg.png" alt="timer">
+        <div class="title">Cultura Play</div>
+        <div class="timer" id="timer">
+            <div class="timeleft_txt">Tiempo Restante</div>
+            <div class="timeleft" id="timeleft">15</div>
+      </div>
+    </div>
+   <header>
+        <div class="scorebox">
+            <div class="score_txt">Puntaje</div>
+            <div class="score_value" id="score">0</div>
+        </div>
+    </header>
+    <section>
+        <div id="pregunta" class="question">
+            <!-- Aquí se insertará la pregunta con JavaScript -->
+        </div>
+        <div id="opciones" class="options">
+            <!-- Aquí se insertarán las opciones con JavaScript -->
+        </div>
+    </section>
+    <footer>
+        <div class="total_question" id="total-question">
+            <!-- Aquí se insertará el número de la pregunta con JavaScript -->
+        </div>
+        <button class="next" id="next-button">Siguiente</button>
+        <button class="quit2">Salir</button>
+    </footer>
+ </div>
+
+<!--Pagina de Resultados-->
+    <div class="results_box">
+        <div class="resultsimg">
+            <img src="Imagenes/pixeltrue-chatting-using-phone 1.png" alt="results">
+            <div class="title">Resultados</div>
+        </div>
+        <div class="complete_text">¡Has completado el cuestionario!</div>
+        <div class="score_text">Tu puntaje es <span class="score">0</span> de <span class="total_score">300</span></div>
+        <div class="botones">
+            <button class="restart">Reiniciar</button>
+            <button class="quit2">Salir</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
